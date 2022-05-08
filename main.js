@@ -1,8 +1,9 @@
 Telegram.WebApp.ready();
 
-const initData = Telegram.WebApp.initData || '';
-const initDataUnsafe = Telegram.WebApp.initDataUnsafe || {};
-const userData = Telegram.WebApp.WebAppUser || {};
+const tg = Telegram.WebApp;
+const initData = tg.initData || '';
+const initDataUnsafe = tg.initDataUnsafe || {};
+const userData = tg.WebAppUser || {};
 console.log(userData)
 
 document.querySelector('#card--name').innerHTML = `Hi, ${initDataUnsafe.user.first_name}!`
