@@ -1,10 +1,35 @@
 .container{
+    max-width: 1200px;
+    padding: 20px 20px;
     display: flex;
 }
 
 .card--container{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 12%11%;
+    width: 20vw;
+    height: 25vh;
+    background-color: #9d70c2;
+}
+
+.card--info{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h2, .card p{
+    color: white;
 }
